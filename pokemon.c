@@ -5,7 +5,7 @@
 // To run: .\pokemon.exe Pokemons.txt
 // Date: 25/03/2022
 
-// Updated: 15/06/2023 - I only changed the comments up here to upload it as an example of a small C project that I made a year ago.
+// Updated: 19/06/2023 - I only changed the comments up here to upload it as an example of a small C project that I made a year ago.
 // Everything found here reflected my knowledge in the first year of the degree and of course does not reflect my current skills or knowledge
 //*****-----------------------------------*****
 
