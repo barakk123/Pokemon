@@ -68,12 +68,19 @@ int main(int argc, char **argv)
     t1.AmountOfPokeInBank=0;
     t1.AmountOfPokeInHand=0;
     char buffer[1024]={'\0'};
-    FILE *f = fopen(argv[1], "r");
-    if(f == NULL)
-    {
-        printf("Failed opening the file.\n");
-        return 1;
-    }
+    FILE *f = NULL;
+
+if (argc > 1) {
+    f = fopen(argv[1], "r");
+} else {
+    f = fopen("Pokemons.txt", "r");
+}
+
+if (f == NULL) {
+    printf("Failed to open file\n");
+    return 1;
+}
+    
     printf("\nHowdy new trainer, what is your name? {example:'first name' 'last name'}\n");
     scanf("%s",buffer);
     
